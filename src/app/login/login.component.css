@@ -1,0 +1,24 @@
+.form label{
+    text-align: center;
+}
+.header{
+    font: bolder;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.login{
+    color: rgb(7, 6, 6);
+    width: 30%;
+    margin: auto;
+    margin-top: 8%;
+    box-sizing: border-box;
+    border: 3px solid #6116a8;
+    padding: 3.5%;
+    border-radius: 30px;
+    background:linear-gradient(120deg,skyblue,#cb51e4);
+}
+#btn{
+    margin-top: 10px;
+    margin-left: 100px;     
+}

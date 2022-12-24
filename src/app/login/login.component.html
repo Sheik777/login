@@ -1,0 +1,24 @@
+<div class="login">
+    <h2 class="header">login</h2>
+
+    <form [formGroup]="loginform" (ngSubmit)="login()" novalidate>
+        <div class="col g-3">
+            <div class="sm-4">
+                <label for="username" class="form-label">Name :</label>
+                <input type="text" class="form-control" id="username" formControlName="username" placeholder="John">
+            </div><br>
+            <div class="sm-4">
+                <label for="password" class="form-label">password :</label>
+                <input type="password" class="form-control" id="pwd" formControlName="password" autocomplete="off">
+            </div><br>
+            <div class="sm-4">
+                <label for="email" class="form-label">Email :</label>
+                <input type="email" class="form-control" id="email" formControlName="email" placeholder="John@gamil.com">
+            </div><br>
+        </div>
+        <div>
+            <span style="color: red;" *ngIf="useronvalid">Invalid Username,Please enter the value</span>
+        </div>
+        <button type="submit" id="btn" class="btn btn-primary">submit</button>
+  </form>
+</div>
